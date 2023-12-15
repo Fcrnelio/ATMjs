@@ -1,0 +1,84 @@
+/* Estilos CSS */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.cajero {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 75%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* selector de tipo atributo especifico del html 
+Los selectores de atributos permiten seleccionar elementos HTML basados en los valores de sus atributos. */
+input[type="password"],
+button {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.oculto {
+  display: none;
+}
+
+main {
+  width: 80%;
+  height: 80%;
+  background-color: dimgray;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+main .column {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+}
+
+main .column button {
+  width: 60px;
+  height: 50px;
+  background-color: silver;
+}
+
+#login #formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+#login h1 {
+  font-weight: 800;
+}

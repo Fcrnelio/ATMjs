@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRNELIO BANK</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="app.js"></script>
+    <main>
+      <div class="column">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="cajero">
+        <div id="login">
+          <h1>CRNELIO BANK</h1>
+          <form id="formulario">
+            <h2>Selecciona tu cuenta</h2>
+            <select id="seleccionarCuenta" required>
+              <option disabled selected>Selecciona un usuario</option>
+              <option value="0">Persona 1</option>
+              <option value="1">Persona 2</option>
+              <option value="2">Persona 3</option>
+            </select>
+            <input
+              required
+              type="password"
+              id="password"
+              placeholder="Ingresa tu contraseña"
+            />
+            <button type="button" onclick="autenticar()">Ingresar</button>
+          </form>
+        </div>
+        <div id="opciones" class="oculto">
+          <h4 id="bienvenida"></h4>
+          <button onclick="consultarSaldo()">Consultar saldo</button>
+          <button onclick="ingresarMonto()">Ingresar monto</button>
+          <button onclick="retirarMonto()">Retirar monto</button>
+          <button onclick="cerrarSesion()">Salir</button>
+        </div>
+        <div id="resultado" class="oculto"></div>
+      </div>
+      <div class="column">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </main>
+  </body>
+</html>
